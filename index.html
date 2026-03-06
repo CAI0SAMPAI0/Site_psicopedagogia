@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- fim da fonte -->
+    <!--icons boodstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--fim bood-->
+    <title>Renata Psico</title>
+    <link href="style/style.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/logo_renata.svg">
+    <script src="js/portfolio_menu.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo_renata.jpeg" class="img">
+                </a>
+            </div><!--logo-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#i">Início</a></li>
+                    <li><a href="#e">Especialidades</a></li>
+                    <li><a href="#s">Sobre</a></li>
+                    <li><a href="#me">Meu espaço</a></li>
+                    <li><a href="#lo">Localizacao</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#c1">
+                    <button>Dúvidas</button>
+                </a>
+            </div><!--btn contato -->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div><!--btn-abrir-menu-->
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x"></i>
+                </div><!--btn-fechar-->
+
+                <nav>
+                    <ul>
+                        <li><a href="#i">Início</a></li>
+                        <li><a href="#e">Especialidades</a></li>
+                        <li><a href="#s">Sobre</a></li>
+                        <li><a href="#me">Meu Espaço</a></li>
+                        <li><a href="#lo">Localizacao</a></li>
+                        <li><a href="#c2">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div><!--overlay-menu-->
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <section class="topo_do_site" id="i">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt_topo_site">
+                        <h1>Especialista em Atendimento Educacional Especializado</h1>
+                        <p>Atendimento educacional especializado para crianças, adolescentes e idosos que apresentam
+                            dificuldades de aprendizagem, leitura, escrita ou raciocínio lógico matemático.</p>
+                        <div class="btn-contato">
+                            <a href="#c2">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div><!--txt-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo do site-->
+        <section class="especialidades" id="e">
+            <div class="interface">
+                <h2 class="titulo" id="e">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <div class="flex">
+                    <div class="esp-box">
+                        <img src="images/logo_borboleta_nobg.png" class="icone-esp">
+                        <h3>Avaliação</h3>
+                        <p>Com base no reconhecimento e funcionamento cerebral e a sua reposição cognitiva, através do
+                            diagnóstico podemos mapear o nível de ... das competências mentais necessárias aos
+                            processamentos dos conteúdos escolares.
+                        </p>
+                    </div>
+
+                    <div class="esp-box">
+                        <img src="images/logo_borboleta_nobg.png" class="icone-esp">
+                        <h3>Prevenção</h3>
+                        <p>Ao tratar de algumas dificuldades e transtornos de aprendizagem, podemos evitar o
+                            aparecimento de outros problemas. A área preventiva do trabalho do psicopedagogo é baseada
+                            na estimulação e orientação do processo ensino-aprendizagem, com objetivo de favorecer a
+                            apropiação do conhecimento do aprendente ao longo da vida.</p>
+                    </div>
+
+                    <div class="esp-box">
+                        <img src="images/logo_borboleta_nobg.png" class="icone-esp">
+                        <h3>Intervenção</h3>
+                        <p>A intervenção pscicopedagógica acontece após seções avaliativas onde foram encontradas
+                            hipóteses [] das falhas na aprendizagem. Diante desses resultados, o psicopedagogo elabora
+                            um plano de intervenção e inicia uma terapia da aprendizagem com propostas educativas, de
+                            forma a estimular as áreas cerebrais que necessitam de intervenção, levando ao sucesso
+                            escolar.</p>
+                    </div>
+
+                    <div class="esp-box">
+                        <img src="images/logo_borboleta_nobg_semborda.png" class="icone-esp">
+                        <h3>Dificuldades na Aprendizagem</h3>
+                        <p>Dificuldades, transtornos e até problemas dde aprendizagem são de ordens que dificultam o
+                            ritmo de aprendizagem de uma pessoa. Esses problemas são detectados a partir dos cinco anos
+                            de idade e necessitam de acompanhamento de psicopedagogos, psicólogos, fonoaudiólogos, e em
+                            alguns alguns casos, outros profissionais.</p>
+                    </div>
+
+                    <div class="esp-box">
+                        <img src="images/logo_borboleta_nobg_semborda.png" class="icone-esp">
+                        <h3>Dificuldades na Leitura e Escrita</h3>
+                        <p>É uma incapacidade específica de aprendizagem caracterizada por dificuldade para alfabetizar-se, entender o que lê, problemas para memorizar palavras, dispersão, falta de atenção, dificuldades em escrever de forma legível e sem erros ortográficos.</p>
+                    </div>
+
+                    <div class="esp-box">
+                        <img src="images/logo_borboleta_nobg_semborda.png" class="icone-esp">
+                        <h3>Dificuldades no Raciocínio Lógico-Matemático</h3>
+                        <p>Dificuldade em fazer operações matemáticas e processos cognitivos afetados, como: Velocidade de processamento da informação; memórias de trabalho, tarefas não-verbais, de curto prazo, sequencial auditiva; habilidade visuoespacial, psicomotoras e perceptivo-táteis.</p>
+                    </div>
+                </div><!--esp_box-->
+            </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especialidades-->
+
+        <section class="frase">
+            <div class="interface">
+                <p>
+                    “Ensinar não é transferir conhecimento, mas criar as possibilidades para a sua própria produção ou a
+                    sua construção.”
+                </p>
+                <span>— Paulo Freire</span>
+            </div>
+        </section>
+
+        <section class="sobre" id="s">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/sobre_mim.jpg" alt="">
+                    </div>
+                    <div class="txt-sobre" id="s">
+                        <h2>QUEM SOU EU, <span>RENATA BRITO DE SIQUEIRA.</span></h2>
+                        <p>Formada em Pedagogia, pós-graduada em Psicopedagogia, com curso de extensão: Prática dp
+                            Atendimento Pscicopedagógico.
+                            Atuo na área da erducação, lidando com conceitos educacionais, emocionais e socias de
+                            crianças dentro do contexto escolar.
+                            Como psicopedagoga atendo crianças, adolescentes e idosos que apresentam dificuldades de
+                            aprendizagem, através de avaliações e intervenções pscicopedagógicas.
+                        </p>
+                        <!--<p></p>-->
+                        <div class="btn-social">
+                            <a href="https://www.instagram.com/renatasiqueirapsico/" target="_blank"><button><i
+                                        class="bi bi-instagram"></i></button></a>
+                            <a href="https://wa.me/5524999992327" target="_blank"><button><i class="bi bi-whatsapp"
+                                        target="_blank"></i></button></a>
+                        </div><!--btn_social-->
+                    </div><!--txt_sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+        <section class="formulario" id="c1">
+            <div class="interface">
+                <h2 class="titulo">TIRE SUA <span>DÚVIDA </span></h2>
+                <form action="/enviar-pergunta" method='post' id="contact_form">
+                    <input type="text" name="name" id="name" placeholder="Seu nome:" required>
+                    <textarea name="pergunta" id="pergunta" placeholder="Escreva sua pergunta aqui..."
+                        required></textarea>
+                    <br>
+                    <div class="btn-enviar"><input type="submit" id="submit_button" value="ENVIAR"></div>
+                </form>
+                <div class="flex"></div>
+            </div><!--interface-->
+        </section><!--forms-->
+
+        <section class="consultorio" id="me">
+            <div class="interface">
+                <h2 class="titulo">ESPAÇO DE <span>ATENDIMENTO</span></h2>
+
+                <div class="flex">
+                    <div class="foto-consultorio">
+                        <img src="images/consultorio1.jpg" alt="Consultório psicopedagógico">
+                    </div>
+
+                    <div class="foto-consultorio">
+                        <img src="images/consultorio2.jpg" alt="Espaço de atendimento">
+                    </div>
+
+                    <div class="foto-consultorio">
+                        <img src="images/consultorio3.jpg" alt="Ambiente de aprendizagem">
+                    </div>
+                </div>
+
+            </div><!--interface-->
+        </section><!--foto consultório-->
+
+        <section class="localizacao" id="lo">
+            <div class="interface">
+
+                <h2 class="titulo">LOCALIZAÇÃO DO <span>CONSULTÓRIO</span></h2>
+
+                <div class="mapa-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d651.7235184676812!2d-44.49810668378378!3d-22.47771909693467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9e79f01a3f28af%3A0x6598e720f277c186!2sPsicopedagoga%20Resende%20Renata%20Siqueira!5e0!3m2!1spt-BR!2sbr!4v1772710991783!5m2!1spt-BR!2sbr"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+
+                <div class="rota-maps">
+                    <a href="https://maps.app.goo.gl/MjxnCSVjbFdVmNmm8" target="_blank">
+                        Abrir rota no Google Maps
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo_renata.jpeg" alt="Logotipo Caio Sampaio">
+                    </div><!--logo-footer-->
+                    <div class="btn-social" id="c2">
+                        <a href="https://www.instagram.com/renatasiqueirapsico/" target="_blank"><button><i
+                                    class="bi bi-instagram"></i></button></a>
+                        <a href="https://wa.me/5524999992327?text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%20contigo%2C%20pois%20eu%20quero%20fazer%20uma%20consulta.%20Qual%20o%20valor%3F"
+                            target="_blank"><button><i class="bi bi-whatsapp" target="_blank"></i></button></a>
+                    </div><!--btn_social-->
+                </div><!--flex-->
+            </div><!--interface-->
+
+    </footer>
+
+    <a href="https://wa.me/5524999139693?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20informações%20sobre%20a%20consulta."
+        class="whatsapp-float" target="_blank">
+
+        <img src="images/whatsapp.svg" alt="WhatsApp">
+
+    </a>
+</body>
+
+</html>
