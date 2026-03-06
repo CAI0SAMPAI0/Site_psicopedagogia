@@ -101,10 +101,12 @@ h2.titulo {
     color: var(--cor-texto);
     font-size: 38px;
     text-align: center;
+    font-family: 'Playfair Display', serif;
 }
 
 h2.titulo span {
     color: var(--cor-primaria);
+    line-height: 1.3;
 }
 
 button:hover {
@@ -330,11 +332,25 @@ section.topo_do_site .flex {
     margin: 15px 0;
 }
 
+/* ESPECIALIDADES GRID */
+
+.especialidades .flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
 /* icone das esp */
 
 .icone-esp {
     width: 55px;
     margin-bottom: 15px;
+}
+
+.esp-box {
+    flex: 1 1 300px;
+    max-width: 350px;
 }
 
 .esp-box img {
@@ -615,41 +631,29 @@ form .btn-enviar input:hover {
     padding: 80px 4%;
 }
 
-.consultorio .flex {
-    display: grid !important;
+.galeria-consultorio {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 30px;
     margin-top: 40px;
 }
 
-.galeria-consultorio {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 50px;
-    flex-wrap: wrap;
-}
-
 .foto-consultorio {
-    width: 340px;
-    padding: 15px;
-    background: #f3d7cf;
-    border-radius: 20px;
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-    transition: transform .3s ease, box-shadow .3s ease;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.foto-consultorio img{
+.foto-consultorio img {
     width: 100%;
-    height: 230px;
+    height: 320px;
     object-fit: cover;
-    border-radius: 15px;
+    transition: 0.5s;
     cursor: pointer;
 }
 
 .foto-consultorio:hover img {
-    transform: translateY(-8px);
-    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+    transform: scale(1.08);
 }
 
 /* LOCALIZAÇÃO */
@@ -832,7 +836,7 @@ footer .line-footer p a {
 
 /* responsividade*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
 
     /* CLASSES GERAIS */
     .flex {
@@ -952,6 +956,66 @@ footer .line-footer p a {
     .whatsapp-float img {
         width: 28px;
         height: 28px;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width:575.98px) {
+
+    .especialidades .flex {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-consultorio {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-consultorio img {
+        height: 260px;
+    }
+
+}
+
+/* TABLET */
+
+@media (min-width:760px) and (max-width:991.98px) {
+
+    .especialidades .flex {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+    }
+
+    .galeria-consultorio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* DESKTOP */
+
+@media (min-width:992px) and (max-width:1199.98px) {
+
+    .especialidades .flex {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .galeria-consultorio {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+/* EXTRA LARGE */
+
+@media (min-width:1200px) {
+    .especialidades .flex {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .galeria-consultorio {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
     }
 
 }
