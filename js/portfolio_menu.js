@@ -70,8 +70,8 @@ document.getElementById('contact_form').addEventListener('submit', function(e) {
     let question = document.getElementById('pergunta').value;
 
     let text = `Olá, meu nome é ${name}.
-Pergunta: ${question}`;
-    let number = '5524999139693';
+${question}`;
+    let number = '5524999992327';
     let url = `https://wa.me/${number}?text=${encodeURIComponent(text)}`;
 
     window.open(url, "_blank");
