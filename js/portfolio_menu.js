@@ -77,3 +77,30 @@ Pergunta: ${question}`;
     window.open(url, "_blank");
 });
 
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("imagemModal");
+const imagens = document.querySelectorAll(".img-consultorio");
+const fechar = document.querySelector(".fechar");
+
+imagens.forEach(img => {
+    img.addEventListener("click", function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    });
+});
+
+fechar.addEventListener("click", function () {
+    modal.style.display = "none";
+});
+
+modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});
+
+document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") {
+        modal.style.display = "none";
+    }
+});
