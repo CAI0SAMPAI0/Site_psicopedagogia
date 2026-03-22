@@ -737,6 +737,9 @@ footer .line-footer p a {
     color: darkolivegreen;
 }
 
+/* =============================================
+   WHATSAPP FLUTUANTE
+   ============================================= */
 .whatsapp-float {
     position: fixed;
     bottom: 25px;
@@ -748,7 +751,7 @@ footer .line-footer p a {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
     z-index: 999;
     animation: whatsappPulse 2s infinite;
 }
@@ -763,19 +766,10 @@ footer .line-footer p a {
     transition: 0.2s;
 }
 
-/* animação de pulsar */
 @keyframes whatsappPulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-    }
-
-    70% {
-        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-    }
+    0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); transform: scale(1);   opacity: 1;   }
+    70%  { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); transform: scale(1.1); opacity: 0.7; }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);   transform: scale(1);   opacity: 1;   }
 }
 
 .foto-consultorio img {
