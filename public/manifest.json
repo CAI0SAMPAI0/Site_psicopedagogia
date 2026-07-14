@@ -1,0 +1,39 @@
+{
+  "name": "Renata Siqueira – Psicopedagoga",
+  "short_name": "Renata Psico",
+  "description": "Psicopedagoga e Neuropsicopedagoga em Resende RJ. Atendimento especializado para TDAH, autismo, dislexia e dificuldades de aprendizagem.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "lang": "pt-BR",
+  "categories": ["education", "health", "medical"],
+  "icons": [
+    {
+      "src": "/images/logo_renata.jpeg",
+      "sizes": "306x306",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logo_renata.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logo_renata.jpeg",
+      "sizes": "306x306",
+      "type": "image/jpeg",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/logo_borboleta_nobg_semborda.png",
+      "sizes": "306x306",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
